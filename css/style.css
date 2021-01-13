@@ -1,8 +1,8 @@
 html, body {
 	color: #aaa;
 	font-size: 14px;
-	font-family: Corbel;
-	font-weight: 400;
+	font-family: 'Poppins', Arial, sans-serif;
+	font-weight: 300;
 	padding: 0;
 	margin: 0;
 	width: 100%;
@@ -29,24 +29,31 @@ section#content>header {
 }
 
 section h1 {
-	font-family: Candara;
-	font-weight: 600;
-	font-size: 78px;
-	color: #3df;
-	text-shadow: 0 0 10px rgb(0,0,0,1);
-
 	position: absolute;
 	display: block;
+	width: 260px;
+	height: 60px;
 	margin: 0;
 	padding: 0;
-	top: -10px;
+	background: url('../img/logo.png') center center no-repeat;
+	text-indent: -30000px;
+	top: 10px;
 	left: 0;
 	z-index: 1;
+	color: #000;
+}
+
+h2 {
+	font-family: 'Poppins', Arial;
+	font-weight: 200;
+	font-size: 20px;
+	line-height: 24px;
+	color: #fff;
 }
 
 h3 {
-	font-family: Corbel;
-	font-weight: 400;
+	font-family: 'Poppins', Arial;
+	font-weight: 200;
 	font-size: 35px;
 	line-height: 35px;
 	margin: 30px 0;
@@ -55,7 +62,7 @@ h3 {
 }
 
 h4 {
-	font-family: Corbel;
+	font-family: 'Poppins', Arial;
 	font-weight: 300;
 	font-size: 24px;
 	line-height: 28px;
@@ -81,7 +88,6 @@ section {
 	position: absolute;
 	left: 0;
 	right: 0;
-	/*height: 400px;*/
 	background-size: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -99,21 +105,42 @@ section#part-1 .content {padding-right:500px;padding-left:10px;}
 section#part-2 {
 	top: 560px;
 	height: 400px;
-	z-index: 2;
+	z-index: 3;
 	background-image: url('../img/smart2.jpg');
 }
 section#part-2 header {padding-left:500px;}
 section#part-2 .content {padding-left:510px;} 
 
-section#part-3 {
+section#part-ad {
 	top: 1040px;
-	height: 1620px;
-	z-index: 3;
+	height: 720px;
+	z-index: 2;
 }
-section#part-3 .content {padding-right:500px;padding-left:10px;} 
+section#part-ad header {}
+section#part-ad .content {padding-right:500px;padding-left:10px;} 
+section#part-ad .ad1 { margin:0 auto;width:960px; }
+
+section#part-download {
+	top: 1840px;
+	height: 300px;
+	z-index: 4;
+}
+section#part-download .content {} 
+section#part-download a, section#part-download p { display:block;width:640px;margin:0 auto;font-size:20px; }
+section#part-download a { font-size:20px;padding:20px;transition:250ms;margin-top:4%; }
+section#part-download p { font-size:12px;padding:0;text-align:center;background:transparent;box-shadow:none;opacity:0.5; }
+
+section#part-training {
+	top: 2220px;
+	z-index: 4;
+}
+section#part-training header p { margin-top:-20px; }
+section#part-training .content { display:flex;flex-wrap:wrap;justify-content:space-between; } 
+section#part-training .content .item { width:31%; }
+
 
 section#copyright {
-	top: 2700px;
+	top: 2900px;
 	background: transparent;
 	width: 960px;
 	margin: 0 auto;
@@ -174,8 +201,7 @@ header {
 }
 #blob-container div p {
 	margin: auto;
-	font-size: 28px;
-	font-weight: 300;
+	font-size: 30px;
 	text-align: center;
 	color: #fff;
 	position: absolute;
@@ -185,11 +211,13 @@ header {
 	width: 60%;
 }
 #blob-container div p span {display:block;font-size:16px;margin-top:10px;}
+#blob-container div#blob-2 p, #blob-container div#blob-4 p { font-size: 20px; }
 #blob-1 {height:300px;width:300px;}
 #blob-2 {height:150px;width:150px;}
-#blob-3 {height:300px;width:300px;}
-#blob-4 {height:200px;width:200px;}
+#blob-3 {height:300px;width:300px;margin-left:25%;}
+#blob-4 {height:200px;width:200px;margin-left:-25%;}
 #blob-5 {height:150px;width:150px;}
+#blob-6, #blob-7, #blob-8, #blob-9 { display:none!important; }
 
 .force-show {
 	display: block !important;
@@ -259,7 +287,7 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
-  background-color: red;
+  background-color: #aa0000;
 }
 
 /*Layout CSS*/
