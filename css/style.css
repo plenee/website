@@ -97,7 +97,7 @@ section#part-1 {
 	top: 80px;
 	height: 400px;
 	z-index: 1;
-	background-image: url('../img/chess.jpg');
+	background-image: url('../img/map.jpg');
 }
 section#part-1 header {padding-right:500px;}
 section#part-1 .content {padding-right:500px;padding-left:10px;} 
