@@ -1,5 +1,5 @@
 html, body {
-	color: #aaa;
+	color: #444;
 	font-size: 14px;
 	font-family: 'Poppins', Arial, sans-serif;
 	font-weight: 300;
@@ -7,7 +7,7 @@ html, body {
 	margin: 0;
 	width: 100%;
 	height: 3000px;
-	background: #000;
+	background: #fff;
 }
 
 section {
@@ -17,9 +17,8 @@ section {
 
 section#content {
 	width: 100%;
-	overflow: hidden;
 	height: 3000px;
-	background: #000;
+	background: #fff;
 	position: relative;
 	z-index: 0;
 }
@@ -31,16 +30,16 @@ section#content>header {
 section h1 {
 	position: absolute;
 	display: block;
-	width: 260px;
-	height: 60px;
+	width: 360px;
+	height: 100px;
 	margin: 0;
 	padding: 0;
-	background: url('../img/logo.png') center center no-repeat;
+	background: url('../img/Logo-2022.png') center center no-repeat;
 	text-indent: -30000px;
 	top: 10px;
 	left: 0;
 	z-index: 1;
-	color: #000;
+	color: #444;
 }
 
 h2 {
@@ -48,17 +47,17 @@ h2 {
 	font-weight: 200;
 	font-size: 20px;
 	line-height: 24px;
-	color: #fff;
+	color: #444;
 }
 
 h3 {
 	font-family: 'Poppins', Arial;
-	font-weight: 200;
+	font-weight: 300;
 	font-size: 35px;
 	line-height: 35px;
 	margin: 30px 0;
-	color: #fff;
-	text-shadow: 0 0 10px rgb(0,0,0,1);
+	color: #456;
+	text-shadow: 0 0 5px #456;
 }
 
 h4 {
@@ -67,7 +66,7 @@ h4 {
 	font-size: 24px;
 	line-height: 28px;
 	margin: 20px 0;
-	color: #fff;
+	color: #444;
 	text-shadow: 0 0 10px rgb(0,0,0,1);
 }
 
@@ -77,9 +76,9 @@ h4 {
 	padding: 4px 0;
 	font-size: 16px;
 	line-height: 34px;
-	color: #fff;
-	background-color: rgba(0,0,0,0.75);
-	box-shadow: 10px 0 0 rgba(0,0,0,0.75), -10px 0 0 rgba(0,0,0,0.75);
+	color: #444;
+	background-color: rgba(255,255,255,0.75);
+	box-shadow: 10px 0 0 rgba(255,255,255,0.75), -10px 0 0 rgba(255,255,255,0.75);
 }
 
 .video { display:inline-block; }
@@ -94,10 +93,11 @@ section {
 	background-color: rgba(1,176,241,0.3)
 }
 section#part-1 {
-	top: 80px;
+	top: 120px;
 	height: 400px;
 	z-index: 1;
 	background-image: url('../img/map.jpg');
+	background-size: cover;
 }
 section#part-1 header {padding-right:500px;}
 section#part-1 .content {padding-right:500px;padding-left:10px;} 
@@ -107,6 +107,7 @@ section#part-2 {
 	height: 400px;
 	z-index: 3;
 	background-image: url('../img/smart2.jpg');
+	background-size: cover;
 }
 section#part-2 header {padding-left:500px;}
 section#part-2 .content {padding-left:510px;} 
@@ -213,10 +214,10 @@ header {
 #blob-container div p span {display:block;font-size:16px;margin-top:10px;}
 #blob-container div#blob-2 p, #blob-container div#blob-4 p { font-size: 20px; }
 #blob-1 {height:300px;width:300px;}
-#blob-2 {height:150px;width:150px;}
-#blob-3 {height:300px;width:300px;margin-left:25%;}
+#blob-2 {height:250px;width:250px;}
+#blob-3 {height:250px;width:250px;margin-left:25%;}
 #blob-4 {height:200px;width:200px;margin-left:-25%;}
-#blob-5 {height:150px;width:150px;}
+#blob-5 {height:250px;width:250px;}
 #blob-6, #blob-7, #blob-8, #blob-9 { display:none!important; }
 
 .force-show {
