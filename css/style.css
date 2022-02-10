@@ -1,5 +1,5 @@
 html, body {
-	color: #444;
+	color: #aaa;
 	font-size: 14px;
 	font-family: 'Poppins', Arial, sans-serif;
 	font-weight: 300;
@@ -17,6 +17,7 @@ section {
 
 section#content {
 	width: 100%;
+	overflow: hidden;
 	height: 3000px;
 	background: #fff;
 	position: relative;
@@ -35,29 +36,37 @@ section h1 {
 	margin: 0;
 	padding: 0;
 	background: url('../img/Logo-2022.png') center center no-repeat;
-	text-indent: -30000px;
+	text-indent: 380px;
 	top: 10px;
 	left: 0;
 	z-index: 1;
-	color: #444;
+	color: #888;
+	font-family: 'Cantarell';;
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 24px;
 }
 
 h2 {
-	font-family: 'Poppins', Arial;
-	font-weight: 200;
-	font-size: 20px;
-	line-height: 24px;
-	color: #444;
+	color: #888;
+	font-family: 'Cantarell';;
+	font-weight: 800;
+	font-size: 40px;
+	line-height: 60px;
 }
 
 h3 {
-	font-family: 'Poppins', Arial;
-	font-weight: 300;
-	font-size: 35px;
+	font-family: 'Cantarell';;
+	font-weight: 550;
+	font-size: 30px;
 	line-height: 35px;
 	margin: 30px 0;
 	color: #456;
-	text-shadow: 0 0 5px #456;
+	text-shadow: 0 0 5px rgb(60,70,80,1);
+	padding-left: 15px;
+	padding-right: 10px;
+	background-color: rgba(255,255,255,0.35);
+	box-shadow: 0 0 25px rgba(255,255,255,0.90)
 }
 
 h4 {
@@ -66,7 +75,7 @@ h4 {
 	font-size: 24px;
 	line-height: 28px;
 	margin: 20px 0;
-	color: #444;
+	color: #345;
 	text-shadow: 0 0 10px rgb(0,0,0,1);
 }
 
@@ -76,9 +85,10 @@ h4 {
 	padding: 4px 0;
 	font-size: 16px;
 	line-height: 34px;
-	color: #444;
+	color: #345;
 	background-color: rgba(255,255,255,0.75);
 	box-shadow: 10px 0 0 rgba(255,255,255,0.75), -10px 0 0 rgba(255,255,255,0.75);
+	min-width=400px
 }
 
 .video { display:inline-block; }
@@ -102,34 +112,45 @@ section#part-1 {
 section#part-1 header {padding-right:500px;}
 section#part-1 .content {padding-right:500px;padding-left:10px;} 
 
+
+section#part-run {
+	top: 460px;
+	height: 60px;
+	z-index: 2;
+	background-color: white
+}
+section#part-run header {padding-right:500px;}
+section#part-run .content {padding-right:500px;padding-left:10px;} 
+
 section#part-2 {
-	top: 560px;
+	top: 580px;
 	height: 400px;
 	z-index: 3;
 	background-image: url('../img/smart2.jpg');
 	background-size: cover;
 }
-section#part-2 header {padding-left:500px;}
-section#part-2 .content {padding-left:510px;} 
+section#part-2 header {padding-right:500px;}
+section#part-2 .content {padding-right:500px;padding-left:10px;} 
 
 section#part-ad {
 	top: 1040px;
-	height: 720px;
+	height: 580px;
 	z-index: 2;
 }
-section#part-ad header {}
+section#part-ad header  {padding-right:500px;}
 section#part-ad .content {padding-right:500px;padding-left:10px;} 
-section#part-ad .ad1 { margin:0 auto;width:960px; }
+section#part-ad .ad1 { margin:0 auto; }
 
 section#part-download {
 	top: 1840px;
 	height: 300px;
 	z-index: 4;
 }
-section#part-download .content {} 
-section#part-download a, section#part-download p { display:block;width:640px;margin:0 auto;font-size:20px; }
+section#part-download .content {padding-right:400px;padding-left:10px;}
+section#part-download a, section#part-download p { display:block;width:240px;margin:0 auto;font-size:20px; }
 section#part-download a { font-size:20px;padding:20px;transition:250ms;margin-top:4%; }
 section#part-download p { font-size:12px;padding:0;text-align:center;background:transparent;box-shadow:none;opacity:0.5; }
+
 
 section#part-training {
 	top: 2220px;
@@ -141,11 +162,11 @@ section#part-training .content .item { width:31%; }
 
 
 section#copyright {
-	top: 2900px;
+	top: 2200px;
 	background: transparent;
 	width: 960px;
 	margin: 0 auto;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 header {
@@ -188,7 +209,7 @@ header {
 	display: none;
 	z-index: 10;
 	background: rgba(1,176,241,0.75);
-	border: 10px solid #000;
+	border: 10px solid #777;
 	border-radius:50%;
 	box-sizing: border-box;
 }
@@ -209,15 +230,15 @@ header {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 60%;
+	width: 75%;
 }
 #blob-container div p span {display:block;font-size:16px;margin-top:10px;}
 #blob-container div#blob-2 p, #blob-container div#blob-4 p { font-size: 20px; }
 #blob-1 {height:300px;width:300px;}
-#blob-2 {height:250px;width:250px;}
-#blob-3 {height:250px;width:250px;margin-left:25%;}
+#blob-2 {height:150px;width:150px;}
+#blob-3 {height:300px;width:300px;margin-left:25%;}
 #blob-4 {height:200px;width:200px;margin-left:-25%;}
-#blob-5 {height:250px;width:250px;}
+#blob-5 {height:150px;width:150px;}
 #blob-6, #blob-7, #blob-8, #blob-9 { display:none!important; }
 
 .force-show {
@@ -252,7 +273,6 @@ aside h1 {
 	padding: 10px;
 }
 .content form span {
-	display: inline-block;
 	width: 70px;
 	text-align: right;
 	padding-right: 10px;
@@ -279,16 +299,15 @@ aside h1 {
 }
 
 a:link, a:visited {
-  background-color: #dd2211;
+  background-color: #888;
   color: white;
-  padding: 15px 25px;
+  padding: 15px 5px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
 }
 
 a:hover, a:active {
-  background-color: #aa0000;
+  background-color: #777777;
 }
 
 /*Layout CSS*/
